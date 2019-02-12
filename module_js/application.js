@@ -23,17 +23,3 @@ function finAnim()
 {
 	console.log('animation terminée')
 }
-
-
-
-
-
-
-
-
-
-
-	
-
-
-

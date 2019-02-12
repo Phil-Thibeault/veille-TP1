@@ -27,18 +27,28 @@ export class AnimLettre {
         /* Création des élément DOM qui seront animés. 
         Les éléments seront intégré dans le conteneur elmParent
         */
+        let i = 0;
+        const tabCouleur = ['#CC231E', '#235E6F' , '#009900', '#34A65F', '#0F8A5F','#F5624D']
+
         console.log('mot')
-        let elmConteneur = this.creerElement(this.lesLettres,
+        let elmConteneur = this.creerElement(this.elmParent,
             'section',
             '',
             'mot')
+
+        for (let uneLettre of lesLettres){
+            let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, 'mot')
+            elmLettres.style.animationDelay = (i * 0.5) + "s";
+            elmLettres.style.color = tabCouleur[(i++)%7]
+        }
         /* On garde une référence sur la fonction terminerIntro */
         let refTerminerIntro = this.terminerAnim.bind(this)
-        elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
+        //elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
         console.log(balise)
+        console.log(elmParent)
         let noeud = document.createElement(balise)
         if (contenu != '') {
             noeud.innerHTML = contenu
