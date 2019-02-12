@@ -28,7 +28,7 @@ export class AnimLettre {
         Les éléments seront intégré dans le conteneur elmParent
         */
         console.log('mot')
-        let elmConteneur = this.creerElement(this.elmParent,
+        let elmConteneur = this.creerElement(this.lesLettres,
             'section',
             '',
             'mot')
