@@ -28,7 +28,7 @@ export class AnimLettre {
         Les éléments seront intégré dans le conteneur elmParent
         */
         let i = 0;
-        const tabCouleur = ['#CC231E', '#235E6F' , '#009900', '#34A65F', '#0F8A5F','#F5624D']
+        const tabCouleur = ['#ffe387', '#c8ff8a' , '#b9ffe5', '#ebb8ff', '#ffada7','#ffc58f']
 
         console.log('mot')
         let elmConteneur = this.creerElement(this.elmParent,
