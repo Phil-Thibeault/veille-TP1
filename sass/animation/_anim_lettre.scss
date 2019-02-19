@@ -1,5 +1,7 @@
 .mot {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .mot>div {

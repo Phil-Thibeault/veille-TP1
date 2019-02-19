@@ -38,7 +38,7 @@ export class AnimLettre {
 
         for (let uneLettre of lesLettres){
             let elmLettres = this.creerElement(elmConteneur, 'div', uneLettre, 'mot')
-            elmLettres.style.animationDelay = (i * 0.5) + "s";
+            elmLettres.style.animationDelay = (i * 0.3) + "s";
             elmLettres.style.color = tabCouleur[(i++)%7]
         }
         /* On garde une référence sur la fonction terminerIntro */
