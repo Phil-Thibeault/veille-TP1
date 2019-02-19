@@ -465,14 +465,14 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .menu a {
   text-decoration: none;
-  color: white;
-  border-bottom: 1px solid white;
+  color: #FCD882;
+  border-bottom: 1px solid #180109;
   font-size: 1rem;
   padding: 0.5rem;
 }
 
 .menu a:first-child {
-  border-top: 1px solid white;
+  border-top: 1px solid #180109;
 }
 
 /*--------------------------------------------------------------
@@ -789,7 +789,7 @@ body {
 }
 
 .menu {
-  background-color: #8d4b4b;
+  background-color: #4E2729;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
   width: 100vw;
@@ -925,7 +925,7 @@ body {
   }
   .menu a {
     border: none;
-    border-left: 1px solid white;
+    border-left: 1px solid #180109;
     /*Propriété comme item flex - peut s'étirer en largeur*/
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
