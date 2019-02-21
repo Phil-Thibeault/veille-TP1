@@ -3,8 +3,9 @@
 */
 
 export const contenuIntro = {
-	titrePrincipal : "Introduction aux modules",
-	titreSecondaire : "TP1  ",
-	titreTernaire : "TIM-640",
-	description : "Dans le cadre du cours « Programmation et veille technologique » Cette animation permettra dd tester le fonctionnement des « classes » des « modules et des fonction fléchées  . "
-}
+  titrePrincipal: "Introduction aux modules",
+  titreSecondaire: "TP1  ",
+  titreTernaire: "TIM-640",
+  description:
+    "Dans le cadre du cours « Programmation et veille technologique » Cette animation permettra de tester le fonctionnement des « classes » des « modules et des fonction fléchées  . "
+};

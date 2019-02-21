@@ -750,6 +750,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #180109;
 }
 
 .global {
@@ -893,7 +894,7 @@ body {
 }
 
 .conteneur {
-  background-color: #fff;
+  background-color: #180109;
   color: #444;
 }
 

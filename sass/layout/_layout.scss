@@ -5,6 +5,7 @@ body {
   /*Conteneur flex en colonne*/
   display: flex;
   flex-direction: column;
+  background-color: $color__background-body;
 }
 
 .global {
@@ -115,7 +116,7 @@ body {
 }
 
 .conteneur {
-  background-color: #fff;
+  background-color: $color__background-body;
   color: #444;
 }
 /* conteneur est un élément flex et en même temps un conteneur grid */
@@ -163,44 +164,41 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  .boutonBurger {
+    display: none;
+  }
 
-	.boutonBurger {
-		display: none
-	}
+  .global {
+    /* Placer à sa potition d'origine */
+    transform: translateX(0%);
+    /*Mettre le contenu en colonne*/
+    flex-direction: column;
+  }
 
-	.global {
-		/* Placer à sa potition d'origine */
-		transform: translateX(0%);
-		/*Mettre le contenu en colonne*/
-		flex-direction: column;
-	}
+  .menu {
+    /*Propriété comme item flex - ne peut s'étirer en hauteur*/
+    width: 96vw;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    flex: 0 0 100%;
 
-	.menu {
-		/*Propriété comme item flex - ne peut s'étirer en hauteur*/
-		width: 96vw;
-		margin-bottom: 10px;
-		border-radius : 10px;
-		flex: 0 0 100%;
+    /*Affichage du menu en rangée*/
+    flex-direction: row;
+    justify-content: space-between;
 
-		/*Affichage du menu en rangée*/
-		flex-direction: row;
-		justify-content: space-between;
+    a {
+      border: none;
+      border-left: 1px solid $color__border-nav;
+      /*Propriété comme item flex - peut s'étirer en largeur*/
+      flex: 1 0 auto;
 
-		 a {
-				border: none;
-				border-left: 1px solid $color__border-nav;
-				/*Propriété comme item flex - peut s'étirer en largeur*/
-				flex: 1 0 auto;
-		
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
 
-		 &:first-child {
-				border-top: none;
-			}
-		 }	
-
-	}
-
-	.conteneur {
+  .conteneur {
     grid-gap: 20px;
     grid-template-columns: 10% 40% auto 10%;
     grid-template-areas:
