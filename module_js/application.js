@@ -51,5 +51,33 @@ function finAnimLettre() {
     ]
   ];
 
-  let monAnimSections = new AnimSection(films, elmConteneur);
+  let monAnimSections = new AnimSection(films, elmConteneur, animImage);
+}
+
+function animImage(target) {
+  let lesImages = document.querySelectorAll(".imageAffiche");
+
+  let laSection = target.getAttribute("id");
+
+  switch (laSection) {
+    case "movie1":
+    default:
+      lesImages[0].classList.add("imageAnim");
+      break;
+    case "movie2":
+      lesImages[1].classList.add("imageAnim");
+      break;
+    case "movie3":
+      lesImages[2].classList.add("imageAnim");
+      break;
+    case "movie4":
+      lesImages[3].classList.add("imageAnim");
+      break;
+    case "movie5":
+      lesImages[4].classList.add("imageAnim");
+      break;
+    case "movie6":
+      lesImages[5].classList.add("imageAnim");
+      break;
+  }
 }

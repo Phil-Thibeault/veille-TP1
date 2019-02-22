@@ -773,6 +773,15 @@ a:hover, a:active {
   text-align: center;
 }
 
+.film .imageAffiche {
+  opacity: 0;
+}
+
+.film .imageAnim {
+  -webkit-animation: animationImage 0.5s both;
+          animation: animationImage 0.5s both;
+}
+
 @-webkit-keyframes animationFilm {
   from {
     /* opacity:  0; */
@@ -826,6 +835,36 @@ a:hover, a:active {
     /* opacity:  1; */
     -webkit-transform: translateX(0%) skew(0deg);
             transform: translateX(0%) skew(0deg);
+  }
+}
+
+@-webkit-keyframes animationImage {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animationImage {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(5);
+            transform: scale(5);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

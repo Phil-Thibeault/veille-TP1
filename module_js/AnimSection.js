@@ -9,11 +9,12 @@ export class AnimSection {
        }}
        */
 
-  constructor(lesFilms, elementParent) {
+  constructor(lesFilms, elementParent, fonction) {
     //Récupérer les valeurs passées en paramètre
     this.lesFilms = lesFilms;
     this.elmParent = elementParent;
     this.animFilms(this.lesFilms);
+    this.fonction = fonction;
   }
 
   animFilms(lesFilms) {
@@ -83,10 +84,18 @@ export class AnimSection {
     }
 
     elmParent.appendChild(noeud);
+
+    if (balise === "section") {
+      noeud.addEventListener(
+        "animationend",
+        this.passerVersAnimationSuivante.bind(this)
+      );
+    }
+
     return noeud;
   }
 
   passerVersAnimationSuivante(evt) {
-    this.fonction();
+    this.fonction(evt.target);
   }
 }
