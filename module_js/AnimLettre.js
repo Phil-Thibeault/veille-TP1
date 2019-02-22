@@ -32,7 +32,6 @@ export class AnimLettre {
       "#ffc58f"
     ];
 
-    console.log("mot");
     let elmConteneur = this.creerElement(this.elmParent, "section", "", "mot");
 
     for (let uneLettre of lesLettres) {
@@ -45,8 +44,6 @@ export class AnimLettre {
   }
 
   creerElement(elmParent, balise, contenu, classCSS) {
-    console.log(balise);
-    console.log(elmParent);
     let noeud = document.createElement(balise);
     if (contenu != "") {
       noeud.innerHTML = contenu;

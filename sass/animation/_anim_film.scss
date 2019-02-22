@@ -1,0 +1,40 @@
+.film {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  animation: animationFilm 1s both;
+
+  .conteneurTexte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@keyframes animationFilm {
+  from {
+    /* opacity:  0; */
+    transform: translateX(-100vw) skew(-15deg);
+    animation-timing-function: linear;
+  }
+
+  85% {
+    transform: translateX(0%) skew(-15deg);
+    animation-timing-function: linear;
+  }
+
+  90% {
+    /* opacity:  .5; */
+    transform: translateX(0%) skew(20deg);
+    animation-timing-function: linear;
+  }
+
+  to {
+    /* opacity:  1; */
+    transform: translateX(0%) skew(0deg);
+  }
+}

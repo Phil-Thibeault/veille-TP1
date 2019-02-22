@@ -22,7 +22,6 @@ export class AnimSection {
             */
     for (let i = 1; i <= lesFilms.length; i++) {
       let classe = "movie" + i;
-      console.log(classe);
       let elmConteneur = this.creerElement(
         this.elmParent,
         "section",
@@ -30,6 +29,7 @@ export class AnimSection {
         ["box", "film", classe],
         classe
       );
+      elmConteneur.style.animationDelay = i + "s";
       let elmImage = this.creerElement(
         elmConteneur,
         "img",
@@ -59,15 +59,6 @@ export class AnimSection {
         null
       );
     }
-
-    /*for (let uneLettre of lesLettres) {
-      let elmLettres = this.creerElement(elmConteneur, "div", uneLettre, "mot");
-      elmLettres.style.animationDelay = i * 0.3 + "s";
-      elmLettres.style.color = tabCouleur[i++ % 7];
-    }*/
-    /* On garde une référence sur la fonction terminerIntro */
-    let refTerminerIntro = this.terminerAnim.bind(this);
-    //elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
   }
 
   creerElement(elmParent, balise, contenu, classCSS, id) {
@@ -95,16 +86,7 @@ export class AnimSection {
     return noeud;
   }
 
-  terminerAnim(evt) {
-    this.elmParent.firstChild.classList.add("deplacementContenuIntro");
-    this.elmParent.firstChild.addEventListener(
-      "animationend",
-      this.passerVersAnimationSuivante.bind(this)
-    );
-  }
-
   passerVersAnimationSuivante(evt) {
-    Util.detruireTousLesNoeud(this.elmParent, this.elmParent);
     this.fonction();
   }
 }

@@ -736,6 +736,100 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+# Animation des films
+--------------------------------------------------------------*/
+.film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-animation: animationFilm 1s both;
+          animation: animationFilm 1s both;
+}
+
+.film .conteneurTexte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@-webkit-keyframes animationFilm {
+  from {
+    /* opacity:  0; */
+    -webkit-transform: translateX(-100vw) skew(-15deg);
+            transform: translateX(-100vw) skew(-15deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  85% {
+    -webkit-transform: translateX(0%) skew(-15deg);
+            transform: translateX(0%) skew(-15deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  90% {
+    /* opacity:  .5; */
+    -webkit-transform: translateX(0%) skew(20deg);
+            transform: translateX(0%) skew(20deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  to {
+    /* opacity:  1; */
+    -webkit-transform: translateX(0%) skew(0deg);
+            transform: translateX(0%) skew(0deg);
+  }
+}
+
+@keyframes animationFilm {
+  from {
+    /* opacity:  0; */
+    -webkit-transform: translateX(-100vw) skew(-15deg);
+            transform: translateX(-100vw) skew(-15deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  85% {
+    -webkit-transform: translateX(0%) skew(-15deg);
+            transform: translateX(0%) skew(-15deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  90% {
+    /* opacity:  .5; */
+    -webkit-transform: translateX(0%) skew(20deg);
+            transform: translateX(0%) skew(20deg);
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+  }
+  to {
+    /* opacity:  1; */
+    -webkit-transform: translateX(0%) skew(0deg);
+            transform: translateX(0%) skew(0deg);
+  }
+}
+
+/*--------------------------------------------------------------
 # layout
 --------------------------------------------------------------*/
 body {
@@ -998,38 +1092,5 @@ body {
 .sidebar2 {
   background-color: #ccc;
   color: #444;
-}
-
-.film {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.film .conteneurTexte {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

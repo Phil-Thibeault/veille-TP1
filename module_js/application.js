@@ -13,7 +13,6 @@ let intro = new Introduction(contenuIntro, elmHeader, animationLettre);
 function animationLettre() {
   /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */
 
-  console.log("debut animation lettre");
   const lesLettres = "Seigneur des Anneaux";
   let monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnimLettre);
 }
@@ -51,7 +50,6 @@ function finAnimLettre() {
       "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
     ]
   ];
-  console.log("animation terminée");
 
   let monAnimSections = new AnimSection(films, elmConteneur);
 }
