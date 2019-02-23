@@ -544,6 +544,7 @@ a:hover, a:active {
   background-color: #006d98;
   font-size: 1em;
   /* max-height : 20vh;*/
+  margin-bottom: 10px;
   -webkit-animation: animGo 1s 1.5s backwards;
           animation: animGo 1s 1.5s backwards;
 }
@@ -1126,6 +1127,10 @@ body {
 .header,
 .footer {
   background-color: #999;
+}
+
+.footer {
+  text-align: center;
 }
 
 .sidebar2 {
