@@ -1124,6 +1124,10 @@ body {
   font-size: 150%;
 }
 
+.content {
+  text-align: center;
+}
+
 .header,
 .footer {
   background-color: #e8a577;
