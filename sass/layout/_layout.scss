@@ -221,8 +221,8 @@ body {
 }
 
 .box {
-  background-color: #444;
-  color: #fff;
+  background-color: #884449;
+  color: #f9b81f;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
@@ -230,10 +230,14 @@ body {
 
 .header,
 .footer {
-  background-color: #999;
+  background-color: #884449;
+}
+
+.footer {
+  text-align: center;
 }
 
 .sidebar2 {
-  background-color: #ccc;
-  color: #444;
+  background-color: #884449;
+  color: #f9b81f;
 }
