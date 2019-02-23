@@ -24,12 +24,12 @@ export class AnimLettre {
         */
     let i = 0;
     const tabCouleur = [
-      "#ffe387",
-      "#c8ff8a",
-      "#b9ffe5",
-      "#ebb8ff",
-      "#ffada7",
-      "#ffc58f"
+      "#fac038",
+      "#f9b81f",
+      "#f9b006",
+      "#e09e06",
+      "#c78d05",
+      "#ae7b04"
     ];
 
     let elmConteneur = this.creerElement(this.elmParent, "section", "", "mot");
@@ -37,7 +37,7 @@ export class AnimLettre {
     for (let uneLettre of lesLettres) {
       let elmLettres = this.creerElement(elmConteneur, "div", uneLettre, "mot");
       elmLettres.style.animationDelay = i * 0.3 + "s";
-      elmLettres.style.color = tabCouleur[i++ % 7];
+      elmLettres.style.color = tabCouleur[i++ % 6];
     }
     /* On garde une référence sur la fonction terminerIntro */
     //elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))

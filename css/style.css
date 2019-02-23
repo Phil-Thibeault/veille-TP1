@@ -547,6 +547,7 @@ a:hover, a:active {
   background-color: #180109;
   font-size: 1em;
   /* max-height : 20vh;*/
+  margin-bottom: 10px;
   -webkit-animation: animGo 1s 1.5s backwards;
           animation: animGo 1s 1.5s backwards;
 }
